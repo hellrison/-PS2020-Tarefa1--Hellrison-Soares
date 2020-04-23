@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarefa1</title>
+</head>
+<body>
+  <script>
+      function pessoa(nome, idade){
+          this.nome = nome;
+          this.idade = idade;
+      }
+        var pessoa1 = new pessoa ("Paulo",20);
+        var pessoa2 = new pessoa ("Ana", 17);
+        var pessoa3 = new pessoa ("Paulo", 23);
+        var pessoa4 = new pessoa ("Armando", 17);
+        var andre = {
+            chegarId : function(pessoa){
+                if(pessoa.idade < 18)
+                {
+                    return `Vai beber coca ${pessoa1.nome}`
+                }
+                else
+                {
+                return `Pode beber cerveja! ${pessoa1.nome}`
+                }
+               
+            }   
+        }
+
+      var faculdade = {
+          nomef:"UFOP",
+          curso:"Engenharia de computação",
+      }
+      var rep= {
+          nomer:"Orfanato",
+          moradores:5,
+      }
+       
+    
+       console.log(andre.chegarId(pessoa1));
+       console.log(andre.chegarId(pessoa2));
+       console.log(andre.chegarId(pessoa3));
+       console.log(andre.chegarId(pessoa4));
+
+
+  </script>
+
+</body>
+</html>
